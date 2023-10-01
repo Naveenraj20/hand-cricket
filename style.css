@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-size: 28px;
+}
+header{
+    align-items: center;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content:center;
+}
+#game{
+    background-color: rgba(244, 248, 248, 0.281);
+    border-radius: 10%;
+    border: 2px double yellow;
+    color: aliceblue;
+    height: 700px;
+    margin-top: 4rem;
+    margin-left: 18%;
+    position: relative;
+    width: 1090px;
+}
+#hand{
+    align-items: flex-end;
+    display: flex;
+    height: 0%;
+    justify-content: space-evenly;
+    margin-top: 17%;
+    padding-bottom: 20px;
+    position: absolute;
+    width: 100%;
+}
+#h{
+    align-items: center;
+    background-color: aqua;
+    border-radius: 6px;
+    border: 5px double blue;
+    display: flex;
+    font-size: 3rem;
+    height: 60px;
+    justify-content: center;
+    width: 70px;
+}
+#score{
+    align-items: center;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    width: 100%;
+}
+#cpu_score{
+    align-items: center;
+    background-color: antiquewhite;
+    border-bottom-left-radius: 20%;
+    border-top-left-radius: 30%;
+    border: 2px solid red;
+    color: black;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 50%;
+}
+#user_score{
+    align-items: center;
+    background-color: aqua; 
+    border-bottom-right-radius: 20%;
+    border-top-right-radius: 30%;
+    color: black;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 50%;
+}
+#middle{
+    align-items: center;
+    background:linear-gradient(rgb(61, 206, 61),skyblue);
+    display: flex;
+    height: 40%;
+    justify-content:space-between;
+    margin-left: 13.5rem;
+    margin-top: 3rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 60%;
+}
+#cpu_currentvalue{
+    align-items: center;
+    background-color: rgb(90, 128, 34);
+    display: flex;
+    font-size: 8rem;
+    height: 75%;
+    justify-content: center;
+    width: 48%;
+}
+#user_currentvalue{
+    align-items: center;
+    background-color:rgb(22, 22, 209);
+    display: flex;
+    font-size: 8rem;
+    height: 75%;
+    justify-content: center;
+    width: 48%;
+}
+#out_not_out{
+    align-items: center;
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+}
+#inono{
+    align-items: center;
+    background-color:  hsl(128, 53%, 40%);
+    border-radius: 20px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 50%;
+}
+#h:hover{
+    animation: hand 0.28s ease-in-out  1 normal forwards;
+    background-color:blueviolet;
+}
+
+@keyframes hand{
+    10%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.dance{
+    animation: dan 3s linear;
+}
+
+@keyframes dan {
+    0%{
+        transition: translateX(0);
+    }
+    50%{
+        transition: translateX(5);
+    }
+    100%{
+        transition: translateX(8);
+    }
+}
